@@ -3,7 +3,6 @@ class Solution {
         int answer = 0;
 
         if (myString.length() > pat.length()){
-            //0이면 my_string index 0, n 이면 my_string index (0.n+1)
             for (int i = 0; i < pat.length(); i++) {
                 String pre = myString.substring(0,i+1);
                 if (pat.contains(pre)){
