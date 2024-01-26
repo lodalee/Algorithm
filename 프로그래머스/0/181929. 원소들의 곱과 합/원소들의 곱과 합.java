@@ -1,6 +1,6 @@
 class Solution {
     public int solution(int[] num_list) {
-        double squ = 0;
+        int squ = 0;
         int mul = 1;
         int answer = 0;
 
@@ -9,13 +9,7 @@ class Solution {
             mul *= num_list[i];
         }
 
-        squ = Math.pow(squ, 2);
-
-        if (mul < (int)squ) {
-            answer = 1;
-        } else {
-            answer = 0;
-        }
+        answer = Math.pow(squ,2) > mul ? 1 : 0;
 
         return answer;
     }
